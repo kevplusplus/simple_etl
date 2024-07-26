@@ -9,7 +9,7 @@ blocks:
   language: python
   name: data_ingest_retail
   retry_config: null
-  status: failed
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
@@ -35,6 +35,7 @@ settings:
 spark_config: {}
 tags: []
 type: python
+updated_at: '2024-07-26 06:54:45'
 uuid: online_retail_etl_pipeline
-variables_dir: /home/src/mage_data/default_repo
+variables_dir: /home/src/mage_data/online_retail_etl
 widgets: []

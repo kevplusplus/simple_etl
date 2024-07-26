@@ -1,4 +1,6 @@
-from ucimlrepo import fetch_ucirepo 
+import io
+import pandas as pd
+import requests
 
 if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
@@ -14,8 +16,9 @@ def load_data(*args, **kwargs):
         Anything (e.g. data frame, dictionary, array, int, str, etc.)
     """
     # Specify your data loading logic here
-    online_retail = fetch_ucirepo(id=352)
-    print(online_retail)
+    url = 'https://fakestoreapi.com/products'
+    response = requests.get(url)
+    print(response.json())
     
     return {}
 
