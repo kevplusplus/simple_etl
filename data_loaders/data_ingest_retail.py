@@ -14,7 +14,8 @@ def load_data(*args, **kwargs):
         Anything (e.g. data frame, dictionary, array, int, str, etc.)
     """
     # Specify your data loading logic here
-    online_retail = fetch_ucirepo(id=352) 
+    online_retail = fetch_ucirepo(id=352)
+    print(online_retail)
     
     return {}
 
