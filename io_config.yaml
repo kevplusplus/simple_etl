@@ -39,15 +39,15 @@ default:
   # Google
   GOOGLE_SERVICE_ACC_KEY:
     type: service_account
-    project_id: project-id
-    private_key_id: key-id
-    private_key: "-----BEGIN PRIVATE KEY-----\nyour_private_key\n-----END_PRIVATE_KEY"
-    client_email: your_service_account_email
+    project_id: online-retail-etl
+    private_key_id: cb77429050621016d94c1882bee2fc9d8652cd35
+    private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCa5BQfD7kFkctv\nbvMRupcpI/fL+QPbexH6460NdvGt53AnZRwT3q08aScQCC/03H3OPU2wW6pwHDjC\n8VUgsT1WJ3AORT3Y0dKv/KFuM3GHiHpdQablTfejA1UEOGdxmVE0JEmFFzQVRss5\nMnrXHg5wCOou0DlfvXEkLqzFKzyoC2wY41BKRARtpHl+QYMtPQNKEQKlBPivwz8m\njDLEiUDZnki1bdxPSaztv+AR5huhc3Ye7r64/gcUh4xd4vjuPX2L3qbTgZNec5fk\nc2E9w2KGf3Lgb3wdzfNACWgvmzlBgzYOpkY7tR6Y5H8yk7NkuEfylrsLgrR5iL5S\nATBqCXPxAgMBAAECggEAEeoT/TE0dzVQ/A0PKjNkaQ7WycW96VhLQLMtSFfD1Vcl\nqLrII/Cu5OQtD0zBHi8T0mMS/ZUmifOrqXlf3Ql+1Hx4eIAP6og/F9luYthqlrBF\nZcySdOY/AGDB6Bxtc202AAO76Juhy52t4spIvKFmblULn9k3r4/xumt3ElFhQTat\n3zc5g23UR+s0a2hjmXJ1igi0f0clz+Gw465kircaO4x9sFSalkAQyu0LJ2T4hKK3\nkrdCAa3TNXzPJhL8WGgEi5EGMAoi+Ij8rfwMoZ8gUMGMq6soM8tg21OSmjOYL60A\nuW4+/jFWtFNwbC8ktmE44Xv0SgsQc1N/1O6iZe++WQKBgQDQ3O2h5Ivd32ILHAan\n85vH3V7jx0c6dlK6LFdsnZDOU+dFXaXijs/Ag7zHSLDoqcIvv9pN6I2b5Z1kHSbp\nD+FMP/xrmH9t8X/mtvOVFtiBJXVtqsYEcqJBqOmkAqyE63zXKrBCyoRzufuoTcl6\n3Hifg+BMJubDacH/hbVP2lUtiQKBgQC92Ok3Gognx7I/nsv27ePz0grQNk/YRXRT\no22LUbGJgSB1ghB3DpgBg7TqpRMBmGelQJVvkil49OHrmW6tNxejTyYjKiT2Vcnx\n4WuqGjfmKo3cysYzVWIFnuT4A1Vjd/TwOqnEjsTSwHmBMXIHVxJ9U3vmAARmRtmm\nJDBxHDKhKQKBgAwBVutiTqPPLjyDPOK0fvTLBaREFRUILhMjb1b/643ghr+W9W0D\nVm+zYst1oy2MbGwANBUcU99tIFHb1xu4XPPcDa9FkbWJFxf01iVwrbsmowxNr5ob\n2LW7dsqFmNL/Eirv+jesmlZoj02KQxV7zLcmhmL6LXN4Bb2hOt2/J/w5AoGBALnN\nqmqY1/r+8hBcDUluCDSgNJ8VGM4VI8Wb5GF/Id/u9eKr2gt7x/9rdMxVpSVhkMbm\nT5rzlQ1hth7MesqiacsWcr/lxmklC1FlCudfY6grq84U0yh4f0f6/CNTt+VzCNF4\nyKCsDiwp3oE38F8Is/rekxtGlwe2fduh/ZsmOtMJAoGAbGv2QwxzsEYoFChoV6mV\nh+lChumaWsKc3niMmy7L3e+zSvSoEbvWnO5EuEIJ058eHGMPW+7iY3mG19yY3CUm\nP5hP0gqs4qSPrWR8O7to/vlE6vmWQAum/W5Vhkionc1FelHQxMnyPqCE7uRwr3dA\ninY4wUdWJ86LS3wt2ltthUQ=\n-----END PRIVATE KEY-----\n"
+    client_email: bigquery-admin@online-retail-etl.iam.gserviceaccount.com
     auth_uri: "https://accounts.google.com/o/oauth2/auth"
-    token_uri: "https://accounts.google.com/o/oauth2/token"
+    token_uri: "https://oauth2.googleapis.com/token"
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
-    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/your_service_account_email"
-  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/path/to/your/service/account/key.json"
+    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/bigquery-admin@online-retail-etl.iam.gserviceaccount.com"
+  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/home/src/mage_data/secrets/key.json"
   GOOGLE_LOCATION: US # Optional
   # MongoDB
   # Specify either the connection string or the (host, password, user, port) to connect to MongoDB.
